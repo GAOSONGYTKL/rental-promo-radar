@@ -1,0 +1,1 @@
+export default { async fetch(request, env) { const url = new URL(request.url); const target = new URL("https://rentaldealradar.com"); if (url.hostname.endsWith(".pages.dev")) { url.protocol = target.protocol; url.host = target.host; return Response.redirect(url.toString(), 301); } return env.ASSETS.fetch(request); } };
