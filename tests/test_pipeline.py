@@ -57,6 +57,10 @@ class PipelineTests(unittest.TestCase):
             self.assertIn('https://example.test/sitemap.xml',(output/'robots.txt').read_text())
             for page in output.rglob('*.html'):
                 raw=page.read_text(encoding='utf-8')
+                if page.name=='404.html':
+                    self.assertIn('noindex',raw)
+                    self.assertIn('Page not found',raw)
+                    continue
                 self.assertIn('rel="canonical"',raw)
                 for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>',raw):
                     schema=json.loads(block)
