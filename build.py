@@ -85,6 +85,9 @@ def generate(config_path=None, output=None, data_path=None):
             node=ET.SubElement(sitemap,'url'); ET.SubElement(node,'loc').text=base+path; ET.SubElement(node,'lastmod').text=lastmod
     ET.ElementTree(sitemap).write(out/'sitemap.xml',encoding='utf-8',xml_declaration=True)
     (out/'robots.txt').write_text('User-agent: *\n'+('Allow: /\nSitemap: '+base+'/sitemap.xml\n' if base else 'Disallow: /\n'),encoding='utf-8')
+    if base:
+        worker='export default { async fetch(request, env) { const url = new URL(request.url); const target = new URL('+json.dumps(base)+'); if (url.hostname.endsWith(".pages.dev")) { url.protocol = target.protocol; url.host = target.host; return Response.redirect(url.toString(), 301); } return env.ASSETS.fetch(request); } };\n'
+        (out/'_worker.js').write_text(worker,encoding='utf-8')
     (out/'_headers').write_text('/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Content-Security-Policy: default-src \'self\'; style-src \'self\'; script-src \'none\'; img-src \'self\' data:; base-uri \'none\'; frame-ancestors \'none\'\n',encoding='utf-8')
     return {'pages':len(paths),'deals':len(offers),'base_url':base or 'NOT DEPLOYED'}
 

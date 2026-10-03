@@ -2,7 +2,7 @@
 
 Official rental offers, with sources and clear limits.
 
-**Production site: https://rental-promo-radar.pages.dev/**
+**Production site: https://rentaldealradar.com/**
 
 English-language directory for `car rental coupon codes`. Sources span multiple regions; currencies, terms and regions remain those of the original provider. An advertised rate is not a live booking quote or a verified coupon.
 

@@ -1,8 +1,8 @@
 ::ILANG
 [TYPE:config][PROJECT:Rental Promo Radar][LANG:zh]
-::STATE{@SITE, brand:Rental Promo Radar, niche:car rental coupon codes, domain:rental-promo-radar.pages.dev}
+::STATE{@SITE, brand:Rental Promo Radar, niche:car rental coupon codes, domain:rentaldealradar.com}
 ::MODULE{SETTINGS}
-base_url = https://rental-promo-radar.pages.dev
+base_url = https://rentaldealradar.com
 locale = en-US
 update_cron = 17 */6 * * *
 user_agent = RentalPromoRadar/1.0
