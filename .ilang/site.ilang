@@ -1,0 +1,38 @@
+::ILANG
+[TYPE:config][PROJECT:Rental Promo Radar][LANG:zh]
+::STATE{@SITE, brand:Rental Promo Radar, niche:car rental coupon codes, domain:rental-promo-radar.pages.dev}
+::MODULE{SETTINGS}
+base_url = https://rental-promo-radar.pages.dev
+locale = en-US
+update_cron = 17 */6 * * *
+user_agent = RentalPromoRadar/1.0
+timeout_seconds = 20
+::MODULE{PROVIDERS|title:抓哪几家 这里改了站就变}
+Europcar | https://www.europcar.co.uk | https://www.europcar.co.uk/en-gb/p/offers |
+Hertz | https://www.hertz.co.za | https://www.hertz.co.za/monthly-car-rental/ |
+SIXT | https://www.sixt.es | https://www.sixt.es/servicios-de-alquiler/ofertas/ |
+Rental Center Crete | https://www.rental-center-crete.com | https://www.rental-center-crete.com/special-offers.html |
+Cars2Go | https://cars2go.gr | https://cars2go.gr/special-offers/ |
+Omega Rental Cars | https://www.omegarentalcars.com | https://www.omegarentalcars.com/hot-deals/relocations/ |
+No Birds | https://www.nobirds.com.au | https://www.nobirds.com.au/sydney/airport-car-hire/ |
+Bargain Car Rentals | https://bargaincarrentals.com.au | https://bargaincarrentals.com.au/best-price-guaranteed/ |
+Pavilion Car & Van Rental | https://www.pavilioncars.co.uk | https://www.pavilioncars.co.uk/vehicle-services-west-sussex/vehicle-hire-weekend-offers |
+MILES Mobility | https://www.miles-mobility.com | https://www.miles-mobility.com/en-de/credits |
+Communauto | https://alberta.communauto.com | https://alberta.communauto.com/helloedmonton/ |
+Regal Rental | https://www.regalrental.co.uk | https://www.regalrental.co.uk/ |
+Supreme Car Rent | https://supremecarrent.com | https://supremecarrent.com/ |
+::MODULE{FIELDS}
+title price currency offer_url valid_until source_url fetched_at
+::MODULE{EXTRACTION|title:只有人工确认过的页面结构才提取 不认识就留空}
+Hertz | hertz_monthly | ZAR
+Cars2Go | cars2go | EUR
+Supreme Car Rent | supreme_fleet | EUR
+::MODULE{RENDER}
+empty_provider_message = No usable price was verified in the latest check. Visit the official source for current offers.
+tagline = Official rental offers, with sources and clear limits.
+::RULE{抓不到 price⇒不写 price 不写价格结构化数据}
+::RULE{valid_until 已过⇒下架}
+::RULE{未找到明确有效期⇒不编有效期 页面标明有效期未知}
+::RULE{抓取失败⇒不沿用旧价格 状态明确显示}
+::RULE{地区和币种保留官方原值 不转换成美国优惠}
+::BOUNDARY{never:编优惠 编价格 编佣金 绕反爬 抓登录内容|scope:permanent}

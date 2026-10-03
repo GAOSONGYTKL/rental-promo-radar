@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+work/
+.env
+*.token
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
