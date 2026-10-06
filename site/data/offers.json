@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-05T14:53:58.277277+00:00",
+  "fetched_at": "2026-10-06T00:08:04.141515+00:00",
   "offers": [
     {
       "plan": "Suzuki Swift or similar / A - MDMR",
@@ -10,8 +10,8 @@
       "title": "Hertz — Suzuki Swift or similar / A - MDMR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-98c2dc291b"
@@ -25,8 +25,8 @@
       "title": "Hertz — Suzuki Swift - Auto / A1 - MDAR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-641a98d3b8"
@@ -40,8 +40,8 @@
       "title": "Hertz — Volkswagen Polo Vivo or similar / B - EDMV",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-84a09f4e43"
@@ -55,8 +55,8 @@
       "title": "Hertz — Toyota Starlet Cross or similar / C1 - CGMV",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-0e34c4740e"
@@ -70,8 +70,8 @@
       "title": "Hertz — Toyota Starlet or similar - Auto / U - EDAR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-bba10dbad9"
@@ -85,8 +85,8 @@
       "title": "Hertz — Toyota Starlet Cross or similar - Auto / D1 - CGAV",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-483b42d2be"
@@ -100,8 +100,8 @@
       "title": "Hertz — Volkswagen Polo TSI (Exclusive) / B1 - HDMV",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-b67e1ca168"
@@ -115,8 +115,8 @@
       "title": "Hertz — Volkswagen Polo TSI (Exclusive) - Auto / U1 - HDAR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-85a85be1c9"
@@ -130,8 +130,8 @@
       "title": "Hertz — Suzuki Jimny 5-Door (Exclusive) / G1 - CFNR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-a497c8bae7"
@@ -145,8 +145,8 @@
       "title": "Hertz — Volkswagen T-Cross or similar - Auto / G - CMAR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-29e37f17ef"
@@ -160,8 +160,8 @@
       "title": "Hertz — Suzuki Jimny 5-Door (Exclusive) - Auto / G3 - CFAR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-80d4fe5eb4"
@@ -175,8 +175,8 @@
       "title": "Hertz — Toyota Corolla Cross Hybrid - Auto / E2 - IGAH",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-e8ff7a91ff"
@@ -190,8 +190,8 @@
       "title": "Hertz — Toyota Corolla Cross or similar - Auto / E - SFAR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-3a554bb647"
@@ -205,8 +205,8 @@
       "title": "Hertz — Toyota Corolla Quest or similar / C - CDMR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-eca0378867"
@@ -220,8 +220,8 @@
       "title": "Hertz — Toyota Corolla Quest or similar - Auto / D - CCAR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-8c54a73052"
@@ -235,8 +235,8 @@
       "title": "Hertz — Toyota Rumion or similar / I - IVMR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-cbd4435703"
@@ -250,8 +250,8 @@
       "title": "Hertz — Toyota Fortuner 2.4 RWD 4x2 or similar - Auto / R - RFAR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-6c6ad85935"
@@ -265,8 +265,8 @@
       "title": "Hertz — BMW 1 Series or similar - Auto / X1 – IGAR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-461454ecf1"
@@ -280,8 +280,8 @@
       "title": "Hertz — BMW 3 Series or similar - Auto / F - FDAR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-64b56a53da"
@@ -295,8 +295,8 @@
       "title": "Hertz — Mercedes-Benz C180 or similar - Auto / H - PXAR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-d0d2ab75ad"
@@ -310,8 +310,8 @@
       "title": "Hertz — BMW X3 (Exclusive) - Auto / E1 - PFAR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-44ec0c0d99"
@@ -325,8 +325,8 @@
       "title": "Hertz — Volkswagen Kombi or similar - Auto / N1 - PVAD",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-d1487df440"
@@ -340,8 +340,8 @@
       "title": "Hertz — Toyota Quantum 2.8 GD6 or similar / O - LVMR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-b3294b7a87"
@@ -355,8 +355,8 @@
       "title": "Hertz — Toyota Hilux 2.4 GD-5 RWD 4x2 (Single Cab) or similar / J - FPMR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-7ba5986a9e"
@@ -370,8 +370,8 @@
       "title": "Hertz — Toyota Hilux 2.4 GD-6 RB SRX RWD 4x2 (Single Cab) or similar / J1 - GPMR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-11ddbb439c"
@@ -385,8 +385,8 @@
       "title": "Hertz — Toyota Hilux 2.4 GD-6 SRX 4x4 (Single Cab) or similar / L - FPNR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-93e2830da2"
@@ -400,8 +400,8 @@
       "title": "Hertz — Toyota Hilux 2.4 GD-6 SRX 4x4 (Double Cab) or similar - Auto / M - FFBR",
       "offer_url": "https://www.hertz.co.za/monthly-car-rental/",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
-      "source_sha256": "a691caadd0b12c671d63b690efb3b9c189118673dd6c700c03b310480cfe7051",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
+      "source_sha256": "ebd735df918e938ccc4430a6dcb66673aeec4d64aa0d2838019bee7946efa880",
       "availability": "unknown",
       "valid_until": null,
       "id": "hertz-237e69bbfc"
@@ -415,7 +415,7 @@
       "title": "Cars2Go — Car Rentals at Corfu Airport",
       "offer_url": "https://cars2go.gr/special-offers/",
       "source_url": "https://cars2go.gr/special-offers/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
       "source_sha256": "33254ca869f5b90acc209746bd307d316416f077ebf77bcf064a25c0235df2f1",
       "availability": "unknown",
       "valid_until": null,
@@ -430,7 +430,7 @@
       "title": "Cars2Go — Car Rentals at Corfu Port",
       "offer_url": "https://cars2go.gr/special-offers/",
       "source_url": "https://cars2go.gr/special-offers/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
       "source_sha256": "33254ca869f5b90acc209746bd307d316416f077ebf77bcf064a25c0235df2f1",
       "availability": "unknown",
       "valid_until": null,
@@ -445,7 +445,7 @@
       "title": "Cars2Go — Weekly Car Rentals",
       "offer_url": "https://cars2go.gr/special-offers/",
       "source_url": "https://cars2go.gr/special-offers/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
       "source_sha256": "33254ca869f5b90acc209746bd307d316416f077ebf77bcf064a25c0235df2f1",
       "availability": "unknown",
       "valid_until": null,
@@ -460,7 +460,7 @@
       "title": "Cars2Go — 3-Day Car Rentals",
       "offer_url": "https://cars2go.gr/special-offers/",
       "source_url": "https://cars2go.gr/special-offers/",
-      "fetched_at": "2026-10-05T14:53:58.277277+00:00",
+      "fetched_at": "2026-10-06T00:08:04.141515+00:00",
       "source_sha256": "33254ca869f5b90acc209746bd307d316416f077ebf77bcf064a25c0235df2f1",
       "availability": "unknown",
       "valid_until": null,
@@ -471,91 +471,91 @@
     {
       "provider": "Europcar",
       "source_url": "https://www.europcar.co.uk/en-gb/p/offers",
-      "checked_at": "2026-10-05T14:53:58.277277+00:00",
+      "checked_at": "2026-10-06T00:08:04.141515+00:00",
       "status": "checked",
       "detail": "Official page fetched; 0 matching advertised rates extracted. No booking availability check was made."
     },
     {
       "provider": "Hertz",
       "source_url": "https://www.hertz.co.za/monthly-car-rental/",
-      "checked_at": "2026-10-05T14:53:58.277277+00:00",
+      "checked_at": "2026-10-06T00:08:04.141515+00:00",
       "status": "checked",
       "detail": "Official page fetched; 27 matching advertised rates extracted. No booking availability check was made."
     },
     {
       "provider": "SIXT",
       "source_url": "https://www.sixt.es/servicios-de-alquiler/ofertas/",
-      "checked_at": "2026-10-05T14:53:58.277277+00:00",
+      "checked_at": "2026-10-06T00:08:04.141515+00:00",
       "status": "checked",
       "detail": "Official page fetched; 0 matching advertised rates extracted. No booking availability check was made."
     },
     {
       "provider": "Rental Center Crete",
       "source_url": "https://www.rental-center-crete.com/special-offers.html",
-      "checked_at": "2026-10-05T14:53:58.277277+00:00",
+      "checked_at": "2026-10-06T00:08:04.141515+00:00",
       "status": "checked",
       "detail": "Official page fetched; 0 matching advertised rates extracted. No booking availability check was made."
     },
     {
       "provider": "Cars2Go",
       "source_url": "https://cars2go.gr/special-offers/",
-      "checked_at": "2026-10-05T14:53:58.277277+00:00",
+      "checked_at": "2026-10-06T00:08:04.141515+00:00",
       "status": "checked",
       "detail": "Official page fetched; 4 matching advertised rates extracted. No booking availability check was made."
     },
     {
       "provider": "Omega Rental Cars",
       "source_url": "https://www.omegarentalcars.com/hot-deals/relocations/",
-      "checked_at": "2026-10-05T14:53:58.277277+00:00",
+      "checked_at": "2026-10-06T00:08:04.141515+00:00",
       "status": "blocked",
       "detail": "robots unavailable: HTTPError"
     },
     {
       "provider": "No Birds",
       "source_url": "https://www.nobirds.com.au/sydney/airport-car-hire/",
-      "checked_at": "2026-10-05T14:53:58.277277+00:00",
+      "checked_at": "2026-10-06T00:08:04.141515+00:00",
       "status": "checked",
       "detail": "Official page fetched; 0 matching advertised rates extracted. No booking availability check was made."
     },
     {
       "provider": "Bargain Car Rentals",
       "source_url": "https://bargaincarrentals.com.au/best-price-guaranteed/",
-      "checked_at": "2026-10-05T14:53:58.277277+00:00",
+      "checked_at": "2026-10-06T00:08:04.141515+00:00",
       "status": "checked",
       "detail": "Official page fetched; 0 matching advertised rates extracted. No booking availability check was made."
     },
     {
       "provider": "Pavilion Car & Van Rental",
       "source_url": "https://www.pavilioncars.co.uk/vehicle-services-west-sussex/vehicle-hire-weekend-offers",
-      "checked_at": "2026-10-05T14:53:58.277277+00:00",
+      "checked_at": "2026-10-06T00:08:04.141515+00:00",
       "status": "checked",
       "detail": "Official page fetched; 0 matching advertised rates extracted. No booking availability check was made."
     },
     {
       "provider": "MILES Mobility",
       "source_url": "https://www.miles-mobility.com/en-de/credits",
-      "checked_at": "2026-10-05T14:53:58.277277+00:00",
+      "checked_at": "2026-10-06T00:08:04.141515+00:00",
       "status": "checked",
       "detail": "Official page fetched; 0 matching advertised rates extracted. No booking availability check was made."
     },
     {
       "provider": "Communauto",
       "source_url": "https://alberta.communauto.com/helloedmonton/",
-      "checked_at": "2026-10-05T14:53:58.277277+00:00",
+      "checked_at": "2026-10-06T00:08:04.141515+00:00",
       "status": "checked",
       "detail": "Official page fetched; 0 matching advertised rates extracted. No booking availability check was made."
     },
     {
       "provider": "Regal Rental",
       "source_url": "https://www.regalrental.co.uk/",
-      "checked_at": "2026-10-05T14:53:58.277277+00:00",
+      "checked_at": "2026-10-06T00:08:04.141515+00:00",
       "status": "checked",
       "detail": "Official page fetched; 0 matching advertised rates extracted. No booking availability check was made."
     },
     {
       "provider": "Supreme Car Rent",
       "source_url": "https://supremecarrent.com/",
-      "checked_at": "2026-10-05T14:53:58.277277+00:00",
+      "checked_at": "2026-10-06T00:08:04.141515+00:00",
       "status": "checked",
       "detail": "Official page fetched; 0 matching advertised rates extracted. No booking availability check was made."
     }
