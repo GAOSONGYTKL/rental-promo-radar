@@ -6,3 +6,5 @@
 
 
 .guide details{margin:12px 0;padding:16px 18px;background:#fff;border:1px solid #dce2d8;border-radius:10px}.guide summary{cursor:pointer;font-weight:700;line-height:1.45}.guide details p:last-child{margin-bottom:0}
+
+.guide-list{list-style:none;padding:0;display:grid;gap:14px}.guide-list li{margin:0}.guide-list a{display:block;padding:18px 20px;background:#fff;border:1px solid #c8d9d0;border-radius:14px;line-height:1.5;overflow-wrap:anywhere}.guide-list a:hover{border-color:#246c4c;background:#f1f8f4}
