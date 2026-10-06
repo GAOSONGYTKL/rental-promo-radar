@@ -4,3 +4,5 @@
 .guide h1{font-size:clamp(28px,4vw,44px);line-height:1.16;letter-spacing:-.035em;margin:16px 0 20px;text-wrap:balance}.guide .answer{margin:0 0 20px;font-size:17px;line-height:1.65;border-radius:0 8px 8px 0}.guide figure{margin:28px 0}.guide a{overflow-wrap:anywhere}table{table-layout:fixed}td,th{overflow-wrap:anywhere}img{max-width:100%}
 @media(max-width:600px){header,main,footer{padding:16px}header{flex-wrap:wrap;gap:12px}header nav{width:100%;gap:20px}.guide .eyebrow{font-size:10px;letter-spacing:.1em}.guide h1{font-size:28px;margin:12px 0 16px}.guide .answer{padding:14px;font-size:16px;line-height:1.6}.guide h2{font-size:23px;line-height:1.3}.guide p{line-height:1.7}.tablewrap{overflow:visible}td,th{padding:10px 8px;font-size:13px}.pageintro{padding:24px 0}.pageintro h1{font-size:32px}}
 
+
+.guide details{margin:12px 0;padding:16px 18px;background:#fff;border:1px solid #dce2d8;border-radius:10px}.guide summary{cursor:pointer;font-weight:700;line-height:1.45}.guide details p:last-child{margin-bottom:0}
