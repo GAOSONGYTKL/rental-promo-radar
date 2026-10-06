@@ -1,1 +1,3 @@
 2026-10-06 | 今日主线：Do Hertz discount codes work with Pay Now? https://rentaldealradar.com/guides/hertz-discount-codes-pay-now-or-later/（本日已发，不重复创建） | T1：FAQ白底卡片，回滚点9503772 | T2：读Traveler Hertz页，学习按优惠类型分段；本篇缺少广泛优惠清单，保留窄问题并核来源 | T3：桌面roster.md归档用户词库及线索，今日用hertz discount codes | T4：付款路线优先核对问答插入今日文章 | T5：补第二张Hertz图及旧AAA图；视频状态待核 | 明天第一篇：avis discount codes，核Southwest标题与条款是否一致，不预设结论
+2026-10-06 补记 | 图组与FAQ部署已核验，commit 9553df42acd35b71a1d00c183c7777649cef3bf7 | 视频已生成：work/shift-20261006/media/hertz-payment-routes.mp4；YouTube上传未完成，Chrome控制报错 GetCursorPos failed: 拒绝访问。 (0x80070005) | 桌面roster.md已建立 | 明天仍为avis discount codes官方标题与条款核对
+
