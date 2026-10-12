@@ -30,3 +30,9 @@ Competitor: https://www.mousesavers.com/transportation-for-disney-vacations/rent
 Source freshness: live browser Dollar page says pickup through 12/31/2026; older search excerpt said 9/30/2026 and was discarded.
 
 User roster question: current official entry, how applied, why a code fails. No invented community experiments. Tomorrow Europcar official entry and region conditions.
+
+2026-10-12 核验 | Dollar https://rentaldealradar.com/guides/dollar-rental-coupon-code-official-offer-and-code-conflict/ | commit 53dadc1079ce125bac5a695e219d2f35111ec81c deploy https://6cbf7865.rental-promo-radar.pages.dev | body identical; canonical/Guides/sitemap62/robots/2x404 verified; five SVG200; 360px scrollWidth345 button321-370 visible; Enterprise old article evidence diagram200 | video generated61.366797s 909180bytes, decodepassed, not uploaded: waiting contemporaneous ToS confirmation | tomorrow europcar coupon code, promo code versus contract number and destination eligibility.
+
+Video pending personal confirmation; no published URL or date.
+Rollback: source commit cf1093e318c31ca8d12156f69c4f59b562256a6e; remove new Dollar article/assets and restore Enterprise JSON from that revision, build/deploy; preserve all unrelated local changes.
+Tomorrow: europcar coupon code. Official FAQ read 2026-10-12: promo/contract number entered using I have a promo code / contract no.; business route is separate. Verify an active offer and destination terms tomorrow, do not infer universal eligibility. https://www.europcar.com/en-us/faq?question=how-do-i-use-a-promo-code-discount-or-access-special-rates
