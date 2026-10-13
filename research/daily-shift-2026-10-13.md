@@ -26,3 +26,5 @@
 Competitor: https://www.mousesavers.com/transportation-for-disney-vacations/rental-car-discounts/ directly read; learn separated brand/context paths. No whole-site gap claim.
 Source-mining batch closed0; not used as recovered facts. Next Thrifty; official offers URL must be verified tomorrow.
 Rollback source commit360d4f8b8c97962d067f9be84fc7f9a87cdc3619.
+
+2026-10-13 核验 | Europcar https://rentaldealradar.com/guides/europcar-coupon-code-official-offer-and-country-checks/ | commit92e898e597dba0bfcee4a36d51896d2b59b4581d deployhttps://fbf56ca6.rental-promo-radar.pages.dev | body/canonical/Guides/sitemap63/robots/2x404 passed; mobile360 scroll345 button358-432 visible; five diagramsloaded | original analysis404/689*100=58.64% (not global exclusivity) | video generated68.326406s 1001930bytes decoded; no publicURL/date, awaiting contemporaneous ToS consent | tomorrow Thrifty official eligibility.
