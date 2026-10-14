@@ -26,3 +26,4 @@
 Competitor read: https://www.mousesavers.com/transportation-for-disney-vacations/rental-car-discounts/ . Learn location/brand/checklist segmentation, not unverified rate claims. Our offer page adds offer-specific eligibility/payment record. No ranking-cause or whole-site gap claim.
 Rollback baseline7817fe2ee74f925f2c7c57930b2edc8090ae331c.
 Next Hotwire. Volume and competition are user-provided, not independently checked.
+2026-10-14 verified | https://rentaldealradar.com/guides/thrifty-car-rental-coupon-code-free-day-and-payment-checks/ | HTTP200 exact HTML/canonical/Guides/sitemap/robots/2 missing paths404; 5 SVG200; mobile360 scroll345, claim button384.68-433.43px; commit2464d65aca10ea6fd8c7dff81b0180de85c322a0 deploymenthttps://250e1139.rental-promo-radar.pages.dev | video prepared Desktop/thrifty-free-day-and-payment.mp4 71.926406seconds1084906bytes, full decode passed; not uploaded yet, no public video URL/date. GSC/GA4 not read, unknown. Tomorrow Hotwire.
