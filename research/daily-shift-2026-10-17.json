@@ -1,16 +1,76 @@
 {
   "date": "2026-10-17",
+  "keyword": "rental car military discount",
+  "url": "https://rentaldealradar.com/guides/rental-car-military-discount-eligibility-and-booking-route/",
+  "commit": "0be7011c41667623dc4e6e164fae4187de0f64e1",
+  "deployment": "https://cc83ba71.rental-promo-radar.pages.dev",
+  "public_check": {
+    "url": "https://rentaldealradar.com/guides/rental-car-military-discount-eligibility-and-booking-route/",
+    "page_status": 200,
+    "body_identical": true,
+    "guides_link": true,
+    "sitemap_includes": true,
+    "sitemap_urls": 67,
+    "canonical": true,
+    "robots": true,
+    "missing": [
+      {
+        "path": "/sixt-proof-missing-20261016/",
+        "status": 404
+      },
+      {
+        "path": "/guides/sixt-proof-no-such-page-20261016/",
+        "status": 404
+      }
+    ],
+    "cache_headers": {
+      "Date": "Sat, 17 Oct 2026 01:06:02 GMT",
+      "cf-cache-status": "DYNAMIC"
+    }
+  },
+  "images": [
+    {
+      "url": "https://rentaldealradar.com/assets/rental-car-military-discount-eligibility-and-booking-route-1.svg",
+      "status": 200,
+      "bytes": 539
+    },
+    {
+      "url": "https://rentaldealradar.com/assets/rental-car-military-discount-eligibility-and-booking-route-2.svg",
+      "status": 200,
+      "bytes": 551
+    },
+    {
+      "url": "https://rentaldealradar.com/assets/rental-car-military-discount-eligibility-and-booking-route-3.svg",
+      "status": 200,
+      "bytes": 537
+    },
+    {
+      "url": "https://rentaldealradar.com/assets/rental-car-military-discount-eligibility-and-booking-route-4.svg",
+      "status": 200,
+      "bytes": 543
+    },
+    {
+      "url": "https://rentaldealradar.com/assets/rental-car-military-discount-eligibility-and-booking-route-5.svg",
+      "status": 200,
+      "bytes": 535
+    }
+  ],
+  "mobile": {
+    "width": 360,
+    "scrollWidth": 345,
+    "claimTop": 643.8646240234375,
+    "claimBottom": 696.2604598999023,
+    "horizontal_overflow": false,
+    "screenshot": "capture failed: Page.captureScreenshot timeout"
+  },
   "analysis_words": 431,
   "body_words": 909,
-  "formula": "analysis_words / body_words",
-  "global_exclusivity_verified": false,
-  "live_booking_test": false,
-  "source": "https://www.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans",
-  "source_status": 200,
-  "enterprise_skipped": "robots 403; no page fetch",
-  "hertz_skipped": "response only 212 bytes; no factual claims taken",
-  "user_material": "official entry / application / failure questions; approved military keyword family",
+  "analysis_ratio": 0.47414741474147415,
+  "exclusive_across_web_verified": false,
+  "video": "prepared and decoded; not uploaded; Studio button interaction timed out; no public URL or date",
+  "video_bytes": 1200574,
+  "GSC": "unknown",
+  "GA4": "unknown",
   "next": "senior car rental discount",
-  "video": "not published",
-  "analysis_ratio": 0.47414741474147415
+  "competitor": "Southwest car offers page fetched HTTP200 after robots allowed; offer cards place benefit before action; learn entry-action adjacency, not flight keywords"
 }
