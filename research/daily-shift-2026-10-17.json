@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-17",
+  "analysis_words": 431,
+  "body_words": 925,
+  "formula": "analysis_words / body_words",
+  "global_exclusivity_verified": false,
+  "live_booking_test": false,
+  "source": "https://www.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans",
+  "source_status": 200,
+  "enterprise_skipped": "robots 403; no page fetch",
+  "hertz_skipped": "response only 212 bytes; no factual claims taken",
+  "user_material": "official entry / application / failure questions; approved military keyword family",
+  "next": "senior car rental discount",
+  "video": "not published",
+  "analysis_ratio": 0.46594594594594596
+}
