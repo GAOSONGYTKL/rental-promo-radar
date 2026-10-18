@@ -83,6 +83,8 @@ def generate(config_path=None, output=None, data_path=None):
         route='/guides/'+article['slug']+'/'
         guides.append('<li><a href="'+route+'">'+esc(article['title'])+'</a></li>')
         article_body='<article class="guide"><span class="eyebrow">RENTAL PROMO RADAR EDITORIAL TEAM</span><h1>'+esc(article['title'])+'</h1><p class="answer">'+esc(article['answer'])+'</p><p>Source review: '+esc(article['reviewed'])+'. No booking test was performed.</p>'+article['html']+'</article>'
+        if article.get('answer_first'):
+            article_body='<article class="guide"><p class="answer">'+esc(article['answer'])+'</p><h1>'+esc(article['title'])+'</h1>'+article['html']+'</article>'
         write(route,article['title'],article['answer'],article_body,[{'@type':'Article','headline':article['title'],'datePublished':article['reviewed'],'author':{'@type':'Organization','name':config['brand']+' Editorial Team'}}],'index.html',article['reviewed'])
     if guides:
         write('/guides/','Car rental coupon codes: practical guides','Source-backed rental coupon guides and original booking checklists.','<section class="pageintro"><h1>Car rental coupon codes: practical guides</h1><ul class="guide-list">'+''.join(guides)+'</ul></section>',[{'@type':'CollectionPage','name':'Rental coupon guides'}],'index.html',now.isoformat())
