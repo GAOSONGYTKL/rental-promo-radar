@@ -85,6 +85,8 @@ def generate(config_path=None, output=None, data_path=None):
         article_body='<article class="guide"><span class="eyebrow">RENTAL PROMO RADAR EDITORIAL TEAM</span><h1>'+esc(article['title'])+'</h1><p class="answer">'+esc(article['answer'])+'</p><p>Source review: '+esc(article['reviewed'])+'. No booking test was performed.</p>'+article['html']+'</article>'
         if article.get('answer_first'):
             article_body='<article class="guide"><p class="answer">'+esc(article['answer'])+'</p><h1>'+esc(article['title'])+'</h1>'+article['html']+'</article>'
+        if article.get('preserve_full_html'):
+            article_body='<article class="guide">'+article['html']+'</article>'
         write(route,article['title'],article['answer'],article_body,[{'@type':'Article','headline':article['title'],'datePublished':article['reviewed'],'author':{'@type':'Organization','name':config['brand']+' Editorial Team'}}],'index.html',article['reviewed'])
     if guides:
         write('/guides/','Car rental coupon codes: practical guides','Source-backed rental coupon guides and original booking checklists.','<section class="pageintro"><h1>Car rental coupon codes: practical guides</h1><ul class="guide-list">'+''.join(guides)+'</ul></section>',[{'@type':'CollectionPage','name':'Rental coupon guides'}],'index.html',now.isoformat())
@@ -97,6 +99,8 @@ def generate(config_path=None, output=None, data_path=None):
         write('/'+route+'/',title,title+' for Rental Promo Radar.','<section class="pageintro"><h1>'+esc(title)+'</h1>'+body+'</section>',[{'@type':'WebPage','name':title}],'index.html',now.isoformat())
     (out/'404.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Page not found | Rental Promo Radar</title><link rel="stylesheet" href="/assets/style.css"></head><body><main><section class="pageintro"><h1>404 — Page not found</h1><p>This address does not exist.</p><a href="/">Return to Rental Promo Radar</a></section></main></body></html>',encoding='utf-8')
     shutil.copytree(ROOT/'assets',out/'assets',dirs_exist_ok=True)
+    if (ROOT/'downloads').exists():
+        shutil.copytree(ROOT/'downloads',out/'downloads',dirs_exist_ok=True)
     public_data=dict(data); public_data['offers']=offers
     (out/'data').mkdir(exist_ok=True); (out/'data/offers.json').write_text(json.dumps(public_data,ensure_ascii=False,indent=2),encoding='utf-8')
     sitemap=ET.Element('urlset',xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
@@ -109,6 +113,8 @@ def generate(config_path=None, output=None, data_path=None):
         worker='export default { async fetch(request, env) { const url = new URL(request.url); const target = new URL('+json.dumps(base)+'); if (url.hostname.endsWith(".pages.dev")) { url.protocol = target.protocol; url.host = target.host; return Response.redirect(url.toString(), 301); } return env.ASSETS.fetch(request); } };\n'
         (out/'_worker.js').write_text(worker,encoding='utf-8')
     (out/'_headers').write_text('/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Content-Security-Policy: default-src \'self\'; style-src \'self\'; script-src \'none\'; img-src \'self\' data:; frame-src https://www.youtube.com; base-uri \'none\'; frame-ancestors \'none\'\n',encoding='utf-8')
+    with (out/'_headers').open('a',encoding='utf-8') as download_headers:
+        download_headers.write('\n/downloads/car-rental-under-25-comparison.csv\n  Content-Type: text/csv; charset=utf-8\n  Content-Disposition: attachment; filename="car-rental-under-25-comparison.csv"\n')
     return {'pages':len(paths),'deals':len(offers),'base_url':base or 'NOT DEPLOYED'}
 
 if __name__=='__main__':

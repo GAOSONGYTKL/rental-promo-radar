@@ -2,3 +2,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Content-Security-Policy: default-src 'self'; style-src 'self'; script-src 'none'; img-src 'self' data:; frame-src https://www.youtube.com; base-uri 'none'; frame-ancestors 'none'
+
+/downloads/car-rental-under-25-comparison.csv
+  Content-Type: text/csv; charset=utf-8
+  Content-Disposition: attachment; filename="car-rental-under-25-comparison.csv"
