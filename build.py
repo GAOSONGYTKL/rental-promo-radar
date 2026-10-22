@@ -36,7 +36,16 @@ def generate(config_path=None, output=None, data_path=None):
     checks={s['provider']:s for s in data['providers']}
     template=(ROOT/'templates/base.html').read_text(encoding='utf-8')
     paths=[]; month=now.strftime('%B %Y')
+    interlinks_file=ROOT/'.ilang/interlinks.json'
+    interlinks=json.loads(interlinks_file.read_text(encoding='utf-8')) if interlinks_file.exists() else {}
     def write(path, title, description, content, schema, kind, lastmod):
+        if path in interlinks:
+            entry=interlinks[path]
+            extra='<section class="context-links" data-interlink-backfill="20261022"><h2>'+esc(entry['heading'])+'</h2>'
+            for link in entry['links']:
+                anchor='<a href="'+esc(link['target'])+'">'+esc(link['text'])+'</a>'
+                extra+='<p>'+esc(link['sentence']).replace('{link}',anchor)+'</p>'
+            content+=extra+'</section>'
         canonical=base+path if base else ''
         if base:
             schema.append({'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':base+'/'},{'@type':'ListItem','position':2,'name':title,'item':canonical}]} if path!='/' else {'@type':'WebSite','name':config['brand'],'url':base+'/'})

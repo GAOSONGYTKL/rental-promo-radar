@@ -1,0 +1,77 @@
+{
+  "/": {
+    "heading": "Guides and site information",
+    "links": [
+      {
+        "target": "/guides/",
+        "text": "Car rental discount and under-25 planning guides",
+        "sentence": "For eligibility checks and practical booking questions, browse {link}."
+      },
+      {
+        "target": "/about/",
+        "text": "How Rental Promo Radar reviews sources",
+        "sentence": "Read {link} to understand this directory."
+      },
+      {
+        "target": "/contact/",
+        "text": "Report an outdated rental offer or source correction",
+        "sentence": "Need a correction? {link}."
+      },
+      {
+        "target": "/privacy/",
+        "text": "Privacy and affiliate disclosures",
+        "sentence": "For data handling and commercial disclosures, read {link}."
+      }
+    ]
+  },
+  "/compare/": {
+    "heading": "Related planning",
+    "links": [
+      {
+        "target": "/guides/",
+        "text": "Rental eligibility and discount guides",
+        "sentence": "Before comparing advertised rates, use our {link} to check the relevant conditions."
+      }
+    ]
+  },
+  "/about/": {
+    "heading": "Explore or contact the directory",
+    "links": [
+      {
+        "target": "/",
+        "text": "Rental Promo Radar offer directory",
+        "sentence": "Browse the {link} for the source-backed listings."
+      },
+      {
+        "target": "/contact/",
+        "text": "Contact the editorial team about a source correction",
+        "sentence": "If something needs attention, {link}."
+      }
+    ]
+  },
+  "/contact/": {
+    "heading": "Before sending an enquiry",
+    "links": [
+      {
+        "target": "/about/",
+        "text": "Our source-review approach",
+        "sentence": "For context on the directory, read {link}."
+      },
+      {
+        "target": "/privacy/",
+        "text": "Privacy and email-enquiry disclosures",
+        "sentence": "Before sharing information, read our {link}."
+      }
+    ]
+  },
+  "/guides/": {
+    "heading": "Continue browsing",
+    "links": [
+      {
+        "target": "/",
+        "text": "Official rental-offer directory",
+        "sentence": "For advertised source-backed listings, return to the {link}."
+      }
+    ]
+  }
+}
