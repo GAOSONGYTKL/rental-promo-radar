@@ -73,5 +73,545 @@
         "sentence": "For advertised source-backed listings, return to the {link}."
       }
     ]
+  },
+  "/providers/europcar/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/compare/",
+        "text": "Advertised rental-rate comparison with regions and terms",
+        "sentence": "For the directory-wide comparison, read {link}; the listed regions and terms still need checking."
+      }
+    ]
+  },
+  "/providers/sixt/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/compare/",
+        "text": "Advertised rental-rate comparison with regions and terms",
+        "sentence": "For the directory-wide comparison, read {link}; the listed regions and terms still need checking."
+      }
+    ]
+  },
+  "/providers/rental-center-crete/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/compare/",
+        "text": "Advertised rental-rate comparison with regions and terms",
+        "sentence": "For the directory-wide comparison, read {link}; the listed regions and terms still need checking."
+      }
+    ]
+  },
+  "/providers/omega-rental-cars/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/compare/",
+        "text": "Advertised rental-rate comparison with regions and terms",
+        "sentence": "For the directory-wide comparison, read {link}; the listed regions and terms still need checking."
+      }
+    ]
+  },
+  "/providers/no-birds/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/compare/",
+        "text": "Advertised rental-rate comparison with regions and terms",
+        "sentence": "For the directory-wide comparison, read {link}; the listed regions and terms still need checking."
+      }
+    ]
+  },
+  "/providers/bargain-car-rentals/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/compare/",
+        "text": "Advertised rental-rate comparison with regions and terms",
+        "sentence": "For the directory-wide comparison, read {link}; the listed regions and terms still need checking."
+      }
+    ]
+  },
+  "/providers/pavilion-car-van-rental/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/compare/",
+        "text": "Advertised rental-rate comparison with regions and terms",
+        "sentence": "For the directory-wide comparison, read {link}; the listed regions and terms still need checking."
+      }
+    ]
+  },
+  "/providers/miles-mobility/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/compare/",
+        "text": "Advertised rental-rate comparison with regions and terms",
+        "sentence": "For the directory-wide comparison, read {link}; the listed regions and terms still need checking."
+      }
+    ]
+  },
+  "/providers/communauto/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/compare/",
+        "text": "Advertised rental-rate comparison with regions and terms",
+        "sentence": "For the directory-wide comparison, read {link}; the listed regions and terms still need checking."
+      }
+    ]
+  },
+  "/providers/regal-rental/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/compare/",
+        "text": "Advertised rental-rate comparison with regions and terms",
+        "sentence": "For the directory-wide comparison, read {link}; the listed regions and terms still need checking."
+      }
+    ]
+  },
+  "/providers/supreme-car-rent/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/compare/",
+        "text": "Advertised rental-rate comparison with regions and terms",
+        "sentence": "For the directory-wide comparison, read {link}; the listed regions and terms still need checking."
+      }
+    ]
+  },
+  "/deals/hertz-98c2dc291b/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-641a98d3b8/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-84a09f4e43/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-0e34c4740e/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-bba10dbad9/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-483b42d2be/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-b67e1ca168/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-85a85be1c9/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-a497c8bae7/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-29e37f17ef/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-80d4fe5eb4/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-e8ff7a91ff/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-3a554bb647/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-eca0378867/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-8c54a73052/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-cbd4435703/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-6c6ad85935/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-461454ecf1/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-64b56a53da/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-d0d2ab75ad/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-44ec0c0d99/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-d1487df440/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-b3294b7a87/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-7ba5986a9e/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-11ddbb439c/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-93e2830da2/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/hertz-237e69bbfc/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/hertz/",
+        "text": "Hertz official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/cars2go-3bf5619864/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/cars2go/",
+        "text": "Cars2Go official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/cars2go-a6c15df221/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/cars2go/",
+        "text": "Cars2Go official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/cars2go-288d605d89/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/cars2go/",
+        "text": "Cars2Go official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/deals/cars2go-5d4e7b24e6/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/providers/cars2go/",
+        "text": "Cars2Go official rental offers",
+        "sentence": "To see the source status and other listings for this provider, read {link}."
+      }
+    ]
+  },
+  "/guides/aaa-car-rental-discount-not-showing/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/guides/hertz-discount-codes-pay-now-or-later/",
+        "text": "Do Hertz discount codes work with Pay Now?",
+        "sentence": "For the related planning question, read {link}."
+      }
+    ]
+  },
+  "/guides/aarp-car-rental-discount-code-member-route-and-awd/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/guides/senior-car-rental-discount-official-offers-and-eligibility/",
+        "text": "Senior Car Rental Discount: Official Offers and Eligibility Checks",
+        "sentence": "For the related planning question, read {link}."
+      }
+    ]
+  },
+  "/guides/avis-discount-codes-headline-vs-terms/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/guides/avis-coupon-code-base-rate-vs-total/",
+        "text": "Does an Avis coupon code discount the base rate or the total bill?",
+        "sentence": "For the related planning question, read {link}."
+      }
+    ]
+  },
+  "/guides/budget-car-rental-coupon-checklist/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/guides/avis-coupon-code-base-rate-vs-total/",
+        "text": "Does an Avis coupon code discount the base rate or the total bill?",
+        "sentence": "For the related planning question, read {link}."
+      }
+    ]
+  },
+  "/guides/car-rental-under-25/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/guides/car-rental-companies-that-rent-to-under-25/",
+        "text": "Car Rental Companies That Rent to Under 25: Find Your Eligible U.S. Shortlist",
+        "sentence": "For the related planning question, read {link}."
+      }
+    ]
+  },
+  "/guides/enterprise-under-25-fee/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/guides/car-rental-under-25/",
+        "text": "Car Rental Under 25 in the U.S.: Check Age Fees Across Your Trip",
+        "sentence": "For the related planning question, read {link}."
+      }
+    ]
+  },
+  "/guides/hertz-discount-codes-pay-now-or-later/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/guides/hertz-coupon-code-upgrade-vs-price/",
+        "text": "Does a Hertz coupon code reduce the price or give an upgrade?",
+        "sentence": "For the related planning question, read {link}."
+      }
+    ]
+  },
+  "/guides/hertz-under-25-fee/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/guides/car-rental-under-25/",
+        "text": "Car Rental Under 25 in the U.S.: Check Age Fees Across Your Trip",
+        "sentence": "For the related planning question, read {link}."
+      }
+    ]
+  },
+  "/guides/rent-a-car-under-21/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/guides/car-rental-companies-that-rent-to-under-25/",
+        "text": "Car Rental Companies That Rent to Under 25: Find Your Eligible U.S. Shortlist",
+        "sentence": "For the related planning question, read {link}."
+      }
+    ]
+  },
+  "/guides/sixt-coupon-code-official-offers-and-pitfalls/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/guides/dollar-rental-coupon-code-official-offer-and-code-conflict/",
+        "text": "Dollar Rental Coupon Code: Get the Official Offer",
+        "sentence": "For the related planning question, read {link}."
+      }
+    ]
+  },
+  "/guides/student-car-rental-discount-official-offers-and-eligibility/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/guides/car-rental-under-25/",
+        "text": "Car Rental Under 25 in the U.S.: Check Age Fees Across Your Trip",
+        "sentence": "For the related planning question, read {link}."
+      }
+    ]
+  },
+  "/privacy/": {
+    "heading": "Related reading",
+    "links": [
+      {
+        "target": "/about/",
+        "text": "How this rental-offer directory works",
+        "sentence": "For the purpose and editorial scope of this site, read {link}."
+      }
+    ]
   }
 }
