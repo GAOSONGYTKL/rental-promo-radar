@@ -6,3 +6,7 @@
 /downloads/car-rental-under-25-comparison.csv
   Content-Type: text/csv; charset=utf-8
   Content-Disposition: attachment; filename="car-rental-under-25-comparison.csv"
+
+/downloads/long-term-car-rental-quote-sheet.csv
+  Content-Type: text/csv; charset=utf-8
+  Content-Disposition: attachment; filename="long-term-car-rental-quote-sheet.csv"

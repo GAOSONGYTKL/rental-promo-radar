@@ -124,6 +124,8 @@ def generate(config_path=None, output=None, data_path=None):
     (out/'_headers').write_text('/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Content-Security-Policy: default-src \'self\'; style-src \'self\'; script-src \'self\' https://www.googletagmanager.com; connect-src \'self\' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; img-src \'self\' data: https://*.google-analytics.com; frame-src https://www.youtube.com; base-uri \'none\'; frame-ancestors \'none\'\n',encoding='utf-8')
     with (out/'_headers').open('a',encoding='utf-8') as download_headers:
         download_headers.write('\n/downloads/car-rental-under-25-comparison.csv\n  Content-Type: text/csv; charset=utf-8\n  Content-Disposition: attachment; filename="car-rental-under-25-comparison.csv"\n')
+    with (out/'_headers').open('a',encoding='utf-8') as lt_headers:
+        lt_headers.write('\n/downloads/long-term-car-rental-quote-sheet.csv\n  Content-Type: text/csv; charset=utf-8\n  Content-Disposition: attachment; filename="long-term-car-rental-quote-sheet.csv"\n')
     return {'pages':len(paths),'deals':len(offers),'base_url':base or 'NOT DEPLOYED'}
 
 if __name__=='__main__':
