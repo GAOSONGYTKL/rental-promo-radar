@@ -1,0 +1,35 @@
+[
+  {
+    "key": "avis",
+    "url": "https://www.avis.com/en/products-and-services/services/one-way-car-rental",
+    "read_date": "2026-10-26",
+    "robots_allowed": true,
+    "status": 200
+  },
+  {
+    "key": "enterprise",
+    "url": "https://www.enterprise.com/en/car-rental/one-way.html",
+    "read_date": "2026-10-26",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "crs",
+    "url": "https://carrentalsavers.com/one-way-car-rental",
+    "read_date": "2026-10-26",
+    "robots_allowed": true,
+    "status": 200
+  },
+  {
+    "key": "mouse",
+    "url": "https://www.mousesavers.com/transportation-for-disney-vacations/rental-car-discounts/",
+    "read_date": "2026-10-26",
+    "robots_allowed": true,
+    "status": 200
+  },
+  {
+    "sitemap_count": 82,
+    "matching_urls": [
+      "https://rentaldealradar.com/guides/car-rental-under-25-one-way/"
+    ]
+  }
+]

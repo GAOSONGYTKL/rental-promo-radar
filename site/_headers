@@ -10,3 +10,7 @@
 /downloads/long-term-car-rental-quote-sheet.csv
   Content-Type: text/csv; charset=utf-8
   Content-Disposition: attachment; filename="long-term-car-rental-quote-sheet.csv"
+
+/downloads/cheapest-one-way-car-rental-comparison.csv
+  Content-Type: text/csv; charset=utf-8
+  Content-Disposition: attachment; filename="cheapest-one-way-car-rental-comparison.csv"

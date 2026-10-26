@@ -126,6 +126,8 @@ def generate(config_path=None, output=None, data_path=None):
         download_headers.write('\n/downloads/car-rental-under-25-comparison.csv\n  Content-Type: text/csv; charset=utf-8\n  Content-Disposition: attachment; filename="car-rental-under-25-comparison.csv"\n')
     with (out/'_headers').open('a',encoding='utf-8') as lt_headers:
         lt_headers.write('\n/downloads/long-term-car-rental-quote-sheet.csv\n  Content-Type: text/csv; charset=utf-8\n  Content-Disposition: attachment; filename="long-term-car-rental-quote-sheet.csv"\n')
+    with (out/'_headers').open('a',encoding='utf-8') as ow_headers:
+        ow_headers.write('\n/downloads/cheapest-one-way-car-rental-comparison.csv\n  Content-Type: text/csv; charset=utf-8\n  Content-Disposition: attachment; filename="cheapest-one-way-car-rental-comparison.csv"\n')
     return {'pages':len(paths),'deals':len(offers),'base_url':base or 'NOT DEPLOYED'}
 
 if __name__=='__main__':

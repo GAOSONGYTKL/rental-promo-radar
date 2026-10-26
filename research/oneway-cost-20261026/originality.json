@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-26",
+  "analysis_words": 432,
+  "body_words": 1034,
+  "formula": "432/1034*100",
+  "percent": 41.78,
+  "count_method": "Eight labeled original reconciliation paragraphs divided by answer, title, headings and body text; HTML tags excluded. Official facts, quotes, FAQs excluded from numerator.",
+  "analysis_paragraphs": [
+    "Start with one fixed journey, not a company ranking. Write the exact collection and return stations beside the dates and times. Keep the car category, driver details and intended extras unchanged across quotes. If you test a nearby station or another day, save it as a new scenario. Otherwise, a lower number may simply price a different journey.",
+    "Save three views of each proposal: the initial result, the final pre-payment breakdown and the terms for the selected route. Give them the same reference in the worksheet. A comparison needs a traceable explanation of what changed, not just two screenshots with different totals. No reservation or payment is needed to organize information already displayed to you.",
+    "Separate a missing line from a zero line. If the breakdown explicitly includes the drop charge in its total, record that wording and do not add the charge again. If the breakdown is silent, write not confirmed and ask the supplier. Silence does not establish that the route is fee-free.",
+    "Our comparison formula is: comparable trip cost = quoted rental charges + separately itemized mandatory charges + selected optional costs. Include every amount only once. Keep a refundable security authorization outside this spending total and record it separately as a funds requirement. This is a worksheet convention, not a promise about a provider’s billing.",
+    "For a changed checkout total, calculate the difference only after matching the itinerary and selections. Difference = final displayed total minus initial displayed total. Then label each explanation supplied by the breakdown: a route charge, a changed rental charge, taxes or an extra you selected. An unexplained remainder stays unexplained. Do not label the entire difference a drop fee.",
+    "Compare coupon and no-coupon proposals on separate rows for the same journey. Record whether each total already includes the route charge and whether its payment or cancellation terms differ. A visibly accepted code is not enough to establish a saving. The useful result is a lower comparable total with conditions you can actually meet.",
+    "If returning to the original station looks cheaper, add the real cost of that alternative journey only when you have a source for it. Keep extra travel, parking and accommodation separate from the rental quote. Without those inputs, show two unranked scenarios rather than claiming that the detour saves money.",
+    "Before paying, ask one precise question about any gap: does this final total include every mandatory charge for returning this car to the named station? Save the reply with the dated quote. If the reply and the breakdown disagree, preserve both and request clarification; do not quietly replace one with the version you prefer."
+  ],
+  "booking_test_performed": false,
+  "worldwide_exclusivity_claimed": false
+}

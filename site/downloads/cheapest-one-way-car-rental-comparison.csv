@@ -1,0 +1,3 @@
+provider,pickup_station,return_station,pickup_datetime,return_datetime,vehicle_category,driver_details,initial_displayed_total,final_displayed_total,currency,rental_charge,drop_charge,drop_charge_included_in_total,other_mandatory_charges,selected_extras,refundable_hold_separate,coupon_and_payment_terms,unexplained_difference,quote_date,saved_quote_reference,official_policy_url,policy_read_date
+Avis,,,,,,,,,,,,,,,,,,,,https://www.avis.com/en/products-and-services/services/one-way-car-rental,2026-10-26
+Enterprise,,,,,,,,,,,,,,,,,,,,https://www.enterprise.com/en/car-rental/one-way.html,2026-10-26
