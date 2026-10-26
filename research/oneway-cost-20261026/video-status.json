@@ -1,9 +1,16 @@
 {
   "video_file": "C:\\Users\\Administrator\\Documents\\Codex\\2026-10-03\\1-github-login-name-public-repos-4\\work\\oneway-20261026\\media\\cheapest-one-way-car-rental.mp4",
   "decode_passed": true,
-  "uploaded": false,
-  "public_url": null,
-  "blocker": "YouTube本次条款确认等待本人回复",
+  "uploaded": true,
+  "public_url": "https://youtu.be/Q4Fk07rgbcU",
+  "blocker": "视频的标清 (SD) 版处理完毕后，你的视频才会在 YouTube 上线（公开范围： 公开 ）",
   "title": "Cheapest One-Way Car Rental: Check the Fee and Final Total",
-  "description": "Compare one-way rental fees and final checkout totals for the same journey before paying. Original educational slides with synthetic English narration. No booking or purchase was performed; prices and policies may change.\n\nhttps://rentaldealradar.com/guides/cheapest-one-way-car-rental/"
+  "description": "Compare one-way rental fees and final checkout totals for the same journey before paying. Original educational slides with synthetic English narration. No booking or purchase was performed; prices and policies may change.\n\nhttps://rentaldealradar.com/guides/cheapest-one-way-car-rental/",
+  "video_id": "Q4Fk07rgbcU",
+  "visibility": "公开",
+  "processing": true,
+  "playback_verified": false,
+  "public_page_date_text": "2026年10月26日",
+  "thumbnail_uploaded": true,
+  "terms_confirmed_by_user": true
 }

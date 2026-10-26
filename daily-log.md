@@ -15,3 +15,5 @@
 2026-10-26 cheapest one way car rental已发布 https://rentaldealradar.com/guides/cheapest-one-way-car-rental/ ｜首页/新页/sitemap/CSV均200，83条sitemap含新页，360px视口客户端345/scrollWidth345无横溢，表格为纵向卡片；CSV已亲点下载且公网字节匹配；canonical/robots/图片/404已核｜原创分析432/1034*100=41.78%，未称全网独家，未实订｜五线：站好看=独立CSS手机卡片可回滚；竞品=读CarRentalSavers单程页已有总价说明，增量为三阶段差额核对而非声称无人讲总价，MouseSavers样本未满十页如实留缺；素材=归档既有日本单例评论与Avis/Enterprise官方口径分开；问答=缺项不等于0、无drop fee不等于最便宜等FAQ；图视频=原创三面板图插新页及旧单程页，英文讲解视频解码通过，尚未上传，等待本次YouTube条款确认，无视频公网链接｜GitHub 8c655076376f0719a8eedcaec7413fb384163fbf；Cloudflare生产a5b40a8e已完成（命令末端控制台GBK打印异常不影响部署成功）；GSC/GA4本次未读不编｜明天第一篇：car rental without credit card，沿库存核发卡机构/实体卡与柜台拒绝，同意图并已有页。
 
 2026-10-26 收尾补记：GitHub定时更新已生成2a5b8fa1；部署前同步其最新data/offers.json与site，保留原GA4同意后加载逻辑，生产部署b882e882成功。再次公网核首页/新页/sitemap/CSV200，83条sitemap，CSV字节与最新源码一致；初次a5b40a8e为本次历史部署。视频仍未上传，等待本次条款确认。
+
+2026-10-26 视频追加：本人已同意本次YouTube条款，Cheapest One-Way Car Rental: Check the Fee and Final Total 已上传；现有视频 https://youtu.be/Q4Fk07rgbcU ，公开范围“公开”，原创slide1封面已上传，说明仅对应文章一个链接。页面显示日期2026年10月26日；当前原文“系统正在处理此视频，请稍后查看。”，工作室说明SD处理后才上线，尚未能播放，不报播放通过、不重传。授权已完成，后续只复核该视频处理及实播。
