@@ -41,6 +41,7 @@ def generate(config_path=None, output=None, data_path=None):
     consolidation=json.loads(consolidation_path.read_text(encoding='utf-8')) if consolidation_path.exists() else {}
     summaries=consolidation.get('summaries',{})
     redirects={'/guides/car-rental-age-limit/':'/guides/car-rental-under-25/'}
+    redirects.update(consolidation.get('legacy_redirects',{}))
     def neutral(text):
         return re.sub(r'\bofficial\s*', '', text, flags=re.I).strip()
     def noindex_deal(path):
@@ -64,6 +65,9 @@ def generate(config_path=None, output=None, data_path=None):
                 extra+='<p>'+esc(link['sentence']).replace('{link}',anchor)+'</p>'
             content+=extra+'</section>'
         title=neutral(title); description=neutral(description)
+        for old_route,new_route in redirects.items():
+            if old_route.startswith('/deals/'):
+                content=content.replace(old_route,new_route)
         canonical=base+path if base else ''
         if base:
             schema.append({'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':base+'/'},{'@type':'ListItem','position':2,'name':title,'item':canonical}]} if path!='/' else {'@type':'WebSite','name':config['brand'],'url':base+'/'})
