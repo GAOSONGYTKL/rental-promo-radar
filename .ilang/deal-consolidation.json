@@ -1,0 +1,7 @@
+{
+  "summaries": {
+    "Cars2Go": "/deals/cars2go-3bf5619864/",
+    "Hertz": "/deals/hertz-11ddbb439c/"
+  },
+  "selection": "Most populated fields, then longest stored entry, then stable ID; keep chosen routes across updates."
+}

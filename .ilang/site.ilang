@@ -28,8 +28,8 @@ Hertz | hertz_monthly | ZAR
 Cars2Go | cars2go | EUR
 Supreme Car Rent | supreme_fleet | EUR
 ::MODULE{RENDER}
-empty_provider_message = No usable price was verified in the latest check. Visit the official source for current offers.
-tagline = Official rental offers, with sources and clear limits.
+empty_provider_message = No usable price was verified in the latest check. Visit the linked source for current offers.
+tagline = Listed rental rates, with sources and clear limits.
 ::RULE{抓不到 price⇒不写 price 不写价格结构化数据}
 ::RULE{valid_until 已过⇒下架}
 ::RULE{未找到明确有效期⇒不编有效期 页面标明有效期未知}

@@ -4,6 +4,7 @@
 import argparse
 import html
 import json
+import re
 import shutil
 from datetime import datetime, timezone
 from pathlib import Path
@@ -18,7 +19,7 @@ def generate(config_path=None, output=None, data_path=None):
     config=load_config(config_path); base=config['base_url'].rstrip('/')
     out=Path(output or ROOT/'site'); out.mkdir(parents=True,exist_ok=True)
     # Remove only generator-owned route directories, inside the chosen output folder.
-    for directory in ('providers','deals'):
+    for directory in ('providers',):
         target=out/directory
         if target.resolve().parent != out.resolve(): raise ValueError('Unsafe output directory')
         if target.exists(): shutil.rmtree(target)
@@ -36,6 +37,22 @@ def generate(config_path=None, output=None, data_path=None):
     checks={s['provider']:s for s in data['providers']}
     template=(ROOT/'templates/base.html').read_text(encoding='utf-8')
     paths=[]; month=now.strftime('%B %Y')
+    consolidation_path=ROOT/'.ilang/deal-consolidation.json'
+    consolidation=json.loads(consolidation_path.read_text(encoding='utf-8')) if consolidation_path.exists() else {}
+    summaries=consolidation.get('summaries',{})
+    redirects={'/guides/car-rental-age-limit/':'/guides/car-rental-under-25/'}
+    def neutral(text):
+        return re.sub(r'\bofficial\s*', '', text, flags=re.I).strip()
+    def noindex_deal(path):
+        return path.startswith('/deals/') and path not in summaries.values()
+    # Retained legacy files must remain accessible but outside the index.
+    for legacy in (out/'deals').glob('*/index.html') if (out/'deals').exists() else []:
+        route='/deals/'+legacy.parent.name+'/'
+        if noindex_deal(route):
+            body=legacy.read_text(encoding='utf-8')
+            body=re.sub(r'<meta name="robots"[^>]*>', '', body)
+            body=body.replace('</head>','<meta name="robots" content="noindex,follow"></head>')
+            legacy.write_text(body,encoding='utf-8')
     interlinks_file=ROOT/'.ilang/interlinks.json'
     interlinks=json.loads(interlinks_file.read_text(encoding='utf-8')) if interlinks_file.exists() else {}
     def write(path, title, description, content, schema, kind, lastmod):
@@ -46,17 +63,19 @@ def generate(config_path=None, output=None, data_path=None):
                 anchor='<a href="'+esc(link['target'])+'">'+esc(link['text'])+'</a>'
                 extra+='<p>'+esc(link['sentence']).replace('{link}',anchor)+'</p>'
             content+=extra+'</section>'
+        title=neutral(title); description=neutral(description)
         canonical=base+path if base else ''
         if base:
             schema.append({'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':base+'/'},{'@type':'ListItem','position':2,'name':title,'item':canonical}]} if path!='/' else {'@type':'WebSite','name':config['brand'],'url':base+'/'})
         ld=json.dumps({'@context':'https://schema.org','@graph':schema},ensure_ascii=False).replace('<','\\u003c')
         metadata=(f'<link rel="canonical" href="{esc(canonical)}"><meta property="og:url" content="{esc(canonical)}"><meta property="og:image" content="{esc(base)}/assets/share.svg">' if base else '<meta name="robots" content="noindex">')
+        if noindex_deal(path): metadata+='<meta name="robots" content="noindex,follow">'
         body=Template(template).substitute(title=esc(title),description=esc(description),brand=esc(config['brand']),locale=esc(config['locale']),metadata=metadata,jsonld=ld,content=content,checked=esc(lastmod),tagline=esc(config['tagline']))
         body=Template((ROOT/'templates'/kind).read_text(encoding='utf-8')).substitute(page=body)
         destination=out/('index.html' if path=='/' else path.strip('/')+'/index.html')
         destination.parent.mkdir(parents=True,exist_ok=True); destination.write_text(body,encoding='utf-8')
-        paths.append((path,lastmod))
-    def url(row): return '/deals/'+row['id']+'/'
+        if not noindex_deal(path): paths.append((path,lastmod))
+    def url(row): return summaries.get(row['provider'],'/deals/'+row['id']+'/')
     def offer_schema(row):
         obj={'@type':'Offer','name':row['title'],'price':row['price'],'priceCurrency':row['currency'],'url':row['offer_url'],'description':f"Advertised starting price per {row['period']}. Booking availability and expiry date are not verified."}
         if row.get('valid_until'): obj['priceValidUntil']=row['valid_until']
@@ -64,24 +83,35 @@ def generate(config_path=None, output=None, data_path=None):
         return obj
     def cards(rows):
         if not rows: return '<div class="empty">'+esc(config['empty_provider_message'])+'</div>'
-        return ''.join('<article class="card"><span class="eyebrow">'+esc(r['provider'])+'</span><h3><a href="'+url(r)+'">'+esc(r['plan'])+'</a></h3><p class="price">'+esc(r['currency'])+' '+esc(r['price'])+' <small>/ '+esc(r['period'])+' · from</small></p><p>Official advertised rate. Availability unconfirmed.</p><a class="textlink" href="'+url(r)+'">Read terms & source →</a></article>' for r in rows)
+        return ''.join('<article class="card"><span class="eyebrow">'+esc(r['provider'])+'</span><h3><a href="'+url(r)+'">'+esc(r['plan'])+'</a></h3><p class="price">'+esc(r['currency'])+' '+esc(r['price'])+' <small>/ '+esc(r['period'])+' · from</small></p><p>Listed advertised rate. Availability unconfirmed.</p><a class="textlink" href="'+url(r)+'">Read terms & source →</a></article>' for r in rows)
     def itemlist(rows):
         return {'@type':'ItemList','itemListElement':[{'@type':'ListItem','position':i+1,'url':base+url(r)} for i,r in enumerate(rows)]} if base else {'@type':'ItemList','numberOfItems':len(rows)}
-    content='<section class="hero"><span class="eyebrow">OFFICIAL SOURCES · NO MADE-UP CODES</span><h1>Your next rental.<br>A clearer deal.</h1><p>Browse official advertised rental rates. See the region, original currency, source and the limits before you book.</p><a class="button" href="#offers">Explore advertised rates</a></section>'
+    content='<section class="hero"><span class="eyebrow">LINKED SOURCES · NO MADE-UP CODES</span><h1>Your next rental.<br>A clearer deal.</h1><p>Browse listed rental rates. See the region, original currency, source and the limits before you book.</p><a class="button" href="#offers">Explore advertised rates</a></section>'
     content+='<section id="offers"><div class="sectionhead"><h2>Latest source-backed rates</h2><a href="/compare/">Compare the details →</a></div><div class="grid">'+cards(offers)+'</div></section><section><h2>Rental providers</h2><div class="providers">'
     content+=''.join('<a href="/providers/'+slug(p['name'])+'/">'+esc(p['name'])+' <span>→</span></a>' for p in config['providers'])+'</div></section><section class="notice"><h2>Clear about what we know</h2><p>These are advertised starting rates, not live booking quotes. Dates, location, duration and driver eligibility may change the final price. No coupon is called “verified” without a booking test. Original currencies are preserved.</p><p>We do not currently earn commissions. Affiliate links will only be enabled after approval under the relevant program terms.</p></section>'
-    write('/',config['brand']+' | Official rental rates · '+month,'Official rental rates with source links, original currencies and honest availability limits.',content,[itemlist(offers)],'index.html',data['fetched_at'])
+    write('/',config['brand']+' | Listed rental rates · '+month,'Listed rental rates with source links, original currencies and honest availability limits.',content,[itemlist(offers)],'index.html',data['fetched_at'])
     for p in config['providers']:
         rows=[r for r in offers if r['provider']==p['name']]; check=checks.get(p['name'],{})
-        content='<section class="pageintro"><span class="eyebrow">RENTAL PROVIDER</span><h1>'+esc(p['name'])+'</h1><p>'+esc(check.get('detail','This source has not been fetched.'))+'</p><a class="button" href="'+esc(p['source_url'])+'">Visit official offers ↗</a></section><div class="grid">'+cards(rows)+'</div>'
+        content='<section class="pageintro"><span class="eyebrow">RENTAL PROVIDER</span><h1>'+esc(p['name'])+'</h1><p>'+esc(check.get('detail','This source has not been fetched.'))+'</p><a class="button" href="'+esc(p['source_url'])+'">Visit listed offers ↗</a></section><div class="grid">'+cards(rows)+'</div>'
         schema={'@type':'Service','name':p['name']+' car rental','provider':{'@type':'Organization','name':p['name'],'url':p['website']}}
         if rows: schema['offers']=[offer_schema(r) for r in rows]
-        write('/providers/'+slug(p['name'])+'/',p['name']+' official rental offers · '+month,p['name']+' rental rates and official source status. No invented codes or prices.',content,[schema],'provider.html',check.get('checked_at',data['fetched_at']))
+        write('/providers/'+slug(p['name'])+'/',p['name']+' listed rental offers · '+month,p['name']+' rental rates and source-check status. No invented codes or prices.',content,[schema],'provider.html',check.get('checked_at',data['fetched_at']))
     for row in offers:
         p=next(p for p in config['providers'] if p['name']==row['provider']); affiliate=p['affiliate_url']
         destination=affiliate or row['offer_url']; rel='sponsored noopener' if affiliate else 'noopener'
-        content='<section class="pageintro"><span class="eyebrow">'+esc(row['provider'])+'</span><h1>'+esc(row['plan'])+'</h1><p class="price">'+esc(row['currency'])+' '+esc(row['price'])+' <small>/ '+esc(row['period'])+' · advertised from</small></p><p>'+esc(row.get('conditions','Price depends on rental dates, location, duration and eligibility. Check the official terms.'))+'</p><p>Availability: unconfirmed. Expiry: '+esc(row.get('valid_until') or 'not stated / not extracted')+'.</p><p>Source checked: '+esc(row['fetched_at'])+'</p><a class="button" rel="'+rel+'" href="'+esc(destination)+'">See official rental offer ↗</a><p class="source">Source: <a href="'+esc(row['source_url'])+'">'+esc(row['source_url'])+'</a></p>'+( '<p>Affiliate link: we may earn a commission.</p>' if affiliate else '')+'</section>'
-        write(url(row),row['title']+' · '+month,row['title']+': '+row['currency']+' '+row['price']+' per '+row['period']+', advertised starting rate; check official terms.',content,[{'@type':'Service','name':row['plan'],'provider':{'@type':'Organization','name':row['provider']},'offers':offer_schema(row)}],'deal.html',row['fetched_at'])
+        content='<section class="pageintro"><span class="eyebrow">'+esc(row['provider'])+'</span><h1>'+esc(row['plan'])+'</h1><p class="price">'+esc(row['currency'])+' '+esc(row['price'])+' <small>/ '+esc(row['period'])+' · advertised from</small></p><p>'+esc(row.get('conditions','Price depends on rental dates, location, duration and eligibility. Check the official terms.'))+'</p><p>Availability: unconfirmed. Expiry: '+esc(row.get('valid_until') or 'not stated / not extracted')+'.</p><p>Source checked: '+esc(row['fetched_at'])+'</p><a class="button" rel="'+rel+'" href="'+esc(destination)+'">See listed rental offer ↗</a><p class="source">Source: <a href="'+esc(row['source_url'])+'">'+esc(row['source_url'])+'</a></p>'+( '<p>Affiliate link: we may earn a commission.</p>' if affiliate else '')+'</section>'
+        write('/deals/'+row['id']+'/',row['title']+' · '+month,row['title']+': '+row['currency']+' '+row['price']+' per '+row['period']+', advertised starting rate; check official terms.',content,[{'@type':'Service','name':row['plan'],'provider':{'@type':'Organization','name':row['provider']},'offers':offer_schema(row)}],'deal.html',row['fetched_at'])
+    for provider, summary_path in summaries.items():
+        group=[r for r in offers if r['provider']==provider]
+        if not group: continue
+        content='<section class="pageintro"><h1>'+esc(provider)+' rental rate notes</h1><p>Brand entries collected from the linked source. Original regions, currencies and rental periods are preserved; these are not U.S. rate quotes or confirmed availability.</p></section><div class="tablewrap"><table><thead><tr><th>Promotion / plan</th><th>Applicable conditions</th><th>Validity</th><th>Source</th></tr></thead><tbody>'
+        for r in group:
+            conditions=r.get('conditions') or 'Additional conditions not stated in the stored entry; check the source.'
+            conditions+=' Listed starting rate: '+str(r['currency'])+' '+str(r['price'])+' / '+str(r['period'])+'.'
+            content+='<tr><td>'+esc(r['plan'])+'</td><td>'+esc(conditions)+'</td><td>'+esc(r.get('valid_until') or 'Not stated')+'</td><td><a href="'+esc(r['source_url'])+'">'+esc(r['source_url'])+'</a></td></tr>'
+        content+='</tbody></table></div><p>Availability unconfirmed. Check the source for applicable conditions before booking.</p>'
+        paths=[entry for entry in paths if entry[0]!=summary_path]
+        write(summary_path,provider+' rental rate notes',provider+' listed rental entries, conditions, dates and source links.',content,[],'deal.html',data['fetched_at'])
     compare='<section class="pageintro"><span class="eyebrow">COMPARE TERMS, NOT JUST NUMBERS</span><h1>Rental rate comparison</h1><p>Different regions, currencies and rental periods are not directly comparable. No exchange-rate conversion or “cheapest” ranking is made.</p></section><div class="tablewrap"><table><thead><tr><th>Provider / plan</th><th>Advertised rate</th><th>Limits</th></tr></thead><tbody>'
     compare+=''.join('<tr><td><a href="'+url(r)+'">'+esc(r['title'])+'</a></td><td>'+esc(r['currency'])+' '+esc(r['price'])+' / '+esc(r['period'])+'</td><td>'+esc(r.get('conditions','Dates, location and eligibility apply. Availability unknown.'))+'</td></tr>' for r in offers)+'</tbody></table></div>'
     write('/compare/','Rental rate comparison · '+month,'Compare source-backed rental rates and restrictions in their original currencies.',compare,[itemlist(offers)],'compare.html',data['fetched_at'])
@@ -90,6 +120,7 @@ def generate(config_path=None, output=None, data_path=None):
     for article_file in article_files:
         article=json.loads(article_file.read_text(encoding='utf-8'))
         route='/guides/'+article['slug']+'/'
+        if route in redirects: continue
         guides.append('<li><a href="'+route+'">'+esc(article['title'])+'</a></li>')
         article_body='<article class="guide"><span class="eyebrow">RENTAL PROMO RADAR EDITORIAL TEAM</span><h1>'+esc(article['title'])+'</h1><p class="answer">'+esc(article['answer'])+'</p><p>Source review: '+esc(article['reviewed'])+'. No booking test was performed.</p>'+article['html']+'</article>'
         if article.get('answer_first'):
@@ -119,8 +150,11 @@ def generate(config_path=None, output=None, data_path=None):
     ET.ElementTree(sitemap).write(out/'sitemap.xml',encoding='utf-8',xml_declaration=True)
     (out/'robots.txt').write_text('User-agent: *\n'+('Allow: /\nSitemap: '+base+'/sitemap.xml\n' if base else 'Disallow: /\n'),encoding='utf-8')
     if base:
-        worker='export default { async fetch(request, env) { const url = new URL(request.url); const target = new URL('+json.dumps(base)+'); if (url.hostname.endsWith(".pages.dev")) { url.protocol = target.protocol; url.host = target.host; return Response.redirect(url.toString(), 301); } return env.ASSETS.fetch(request); } };\n'
+        worker='export default { async fetch(request, env) { const url = new URL(request.url); const target = new URL('+json.dumps(base)+'); if (url.hostname.endsWith(".pages.dev")) { url.protocol = target.protocol; url.host = target.host; return Response.redirect(url.toString(), 301); } const redirects = '+json.dumps(redirects)+'; if (redirects[url.pathname]) return Response.redirect(new URL(redirects[url.pathname], target).toString(), 301); return env.ASSETS.fetch(request); } };\n'
         (out/'_worker.js').write_text(worker,encoding='utf-8')
+    redirect_file=out/'guides/car-rental-age-limit/index.html'
+    redirect_file.parent.mkdir(parents=True,exist_ok=True)
+    redirect_file.write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><link rel="canonical" href="'+base+'/guides/car-rental-under-25/"><title>Age and fee information moved</title></head><body><main><p>This information is now part of <a href="/guides/car-rental-under-25/">Car rental under 25</a>.</p></main></body></html>',encoding='utf-8')
     (out/'_headers').write_text('/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Content-Security-Policy: default-src \'self\'; style-src \'self\'; script-src \'self\' https://www.googletagmanager.com; connect-src \'self\' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; img-src \'self\' data: https://*.google-analytics.com; frame-src https://www.youtube.com; base-uri \'none\'; frame-ancestors \'none\'\n',encoding='utf-8')
     with (out/'_headers').open('a',encoding='utf-8') as download_headers:
         download_headers.write('\n/downloads/car-rental-under-25-comparison.csv\n  Content-Type: text/csv; charset=utf-8\n  Content-Disposition: attachment; filename="car-rental-under-25-comparison.csv"\n')
@@ -128,7 +162,7 @@ def generate(config_path=None, output=None, data_path=None):
         lt_headers.write('\n/downloads/long-term-car-rental-quote-sheet.csv\n  Content-Type: text/csv; charset=utf-8\n  Content-Disposition: attachment; filename="long-term-car-rental-quote-sheet.csv"\n')
     with (out/'_headers').open('a',encoding='utf-8') as ow_headers:
         ow_headers.write('\n/downloads/cheapest-one-way-car-rental-comparison.csv\n  Content-Type: text/csv; charset=utf-8\n  Content-Disposition: attachment; filename="cheapest-one-way-car-rental-comparison.csv"\n')
-    return {'pages':len(paths),'deals':len(offers),'base_url':base or 'NOT DEPLOYED'}
+    return {'pages':len(paths),'deals':sum(path.startswith('/deals/') for path,lastmod in paths),'offer_entries':len(offers),'base_url':base or 'NOT DEPLOYED'}
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(); parser.add_argument('--config'); parser.add_argument('--output'); args=parser.parse_args()
