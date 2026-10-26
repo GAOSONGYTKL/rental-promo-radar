@@ -1,0 +1,78 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "bytes": 19586,
+    "content_type": "text/html; charset=utf-8",
+    "disposition": null
+  },
+  {
+    "path": "/guides/cheapest-one-way-car-rental/",
+    "status": 200,
+    "bytes": 11956,
+    "content_type": "text/html; charset=utf-8",
+    "disposition": null,
+    "answer_matches": true,
+    "canonical": true,
+    "no_noindex": true
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "bytes": 10367,
+    "content_type": "application/xml",
+    "disposition": null,
+    "url_count": 83,
+    "contains_new": true
+  },
+  {
+    "path": "/guides/",
+    "status": 200,
+    "bytes": 7757,
+    "content_type": "text/html; charset=utf-8",
+    "disposition": null,
+    "has_link": true
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "bytes": 75,
+    "content_type": "text/plain; charset=utf-8",
+    "disposition": null,
+    "allows_crawl": true
+  },
+  {
+    "path": "/assets/oneway-cost-check.svg",
+    "status": 200,
+    "bytes": 1424,
+    "content_type": "image/svg+xml",
+    "disposition": null
+  },
+  {
+    "path": "/assets/oneway-cost.css",
+    "status": 200,
+    "bytes": 1258,
+    "content_type": "text/css; charset=utf-8",
+    "disposition": null
+  },
+  {
+    "path": "/downloads/cheapest-one-way-car-rental-comparison.csv",
+    "status": 200,
+    "bytes": 604,
+    "content_type": "text/csv; charset=utf-8",
+    "disposition": "attachment; filename=\"cheapest-one-way-car-rental-comparison.csv\"",
+    "same_bytes": true,
+    "first_lines": [
+      "provider,pickup_station,return_station,pickup_datetime,return_datetime,vehicle_category,driver_details,initial_displayed_total,final_displayed_total,currency,rental_charge,drop_charge,drop_charge_included_in_total,other_mandatory_charges,selected_extras,refundable_hold_separate,coupon_and_payment_terms,unexplained_difference,quote_date,saved_quote_reference,official_policy_url,policy_read_date",
+      "Avis,,,,,,,,,,,,,,,,,,,,https://www.avis.com/en/products-and-services/services/one-way-car-rental,2026-10-26",
+      "Enterprise,,,,,,,,,,,,,,,,,,,,https://www.enterprise.com/en/car-rental/one-way.html,2026-10-26"
+    ]
+  },
+  {
+    "path": "/deliberate-missing-check-20261026/",
+    "status": 404,
+    "bytes": 749,
+    "content_type": "text/html; charset=utf-8",
+    "disposition": null
+  }
+]

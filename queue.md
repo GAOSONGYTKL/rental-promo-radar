@@ -75,3 +75,5 @@ costco car rental：用户明确谷歌未给数据；不使用其他来源的数
 之后 senior car rental discount（880），再 student car rental discount（720）；各族先做自己的主页面。新页完成后一次只排一件既有页优化。
 
 2026-10-17执行回写：军人泛族已覆盖新页 https://rentaldealradar.com/guides/rental-car-military-discount-eligibility-and-booking-route/；不再新开同族页。下一篇2026-10-18 senior car rental discount（880，用户提供），之后student car rental discount（720，用户提供）；品牌词继续并既有页。
+
+2026-10-26 ITEM2已发布 https://rentaldealradar.com/guides/cheapest-one-way-car-rental/；下一条ITEM3 car rental without credit card，2026-10-27 09:00，先核同意图旧页不重复建；ITEM4其后；未扩词未补发。
