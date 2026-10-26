@@ -60,7 +60,7 @@ def generate(config_path=None, output=None, data_path=None):
             entry=interlinks[path]
             extra='<section class="context-links" data-interlink-backfill="20261022"><h2>'+esc(entry['heading'])+'</h2>'
             for link in entry['links']:
-                anchor='<a href="'+esc(link['target'])+'">'+esc(link['text'])+'</a>'
+                anchor='<a href="'+esc(link['target'])+'">'+esc(neutral(link['text']))+'</a>'
                 extra+='<p>'+esc(link['sentence']).replace('{link}',anchor)+'</p>'
             content+=extra+'</section>'
         title=neutral(title); description=neutral(description)
