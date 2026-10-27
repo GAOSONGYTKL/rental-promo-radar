@@ -126,9 +126,9 @@ def generate(config_path=None, output=None, data_path=None):
         route='/guides/'+article['slug']+'/'
         if route in redirects: continue
         guides.append('<li><a href="'+route+'">'+esc(article['title'])+'</a></li>')
-        article_body='<article class="guide"><span class="eyebrow">RENTAL PROMO RADAR EDITORIAL TEAM</span><h1>'+esc(article['title'])+'</h1><p class="answer">'+esc(article['answer'])+'</p><p>Source review: '+esc(article['reviewed'])+'. No booking test was performed.</p>'+article['html']+'</article>'
+        article_body='<article class="guide"><span class="eyebrow">RENTAL PROMO RADAR EDITORIAL TEAM</span><h1>'+esc(article.get('h1',article['title']))+'</h1><p class="answer">'+esc(article['answer'])+'</p><p>Source review: '+esc(article['reviewed'])+'. No booking test was performed.</p>'+article['html']+'</article>'
         if article.get('answer_first'):
-            article_body='<article class="guide"><p class="answer">'+esc(article['answer'])+'</p><h1>'+esc(article['title'])+'</h1>'+article['html']+'</article>'
+            article_body='<article class="guide"><p class="answer">'+esc(article['answer'])+'</p><h1>'+esc(article.get('h1',article['title']))+'</h1>'+article['html']+'</article>'
         if article.get('preserve_full_html'):
             article_body='<article class="guide">'+article['html']+'</article>'
         write(route,article['title'],article['answer'],article_body,[{'@type':'Article','headline':article['title'],'datePublished':article['reviewed'],'author':{'@type':'Organization','name':config['brand']+' Editorial Team'}}],'index.html',article['reviewed'])
