@@ -77,3 +77,15 @@ costco car rental：用户明确谷歌未给数据；不使用其他来源的数
 2026-10-17执行回写：军人泛族已覆盖新页 https://rentaldealradar.com/guides/rental-car-military-discount-eligibility-and-booking-route/；不再新开同族页。下一篇2026-10-18 senior car rental discount（880，用户提供），之后student car rental discount（720，用户提供）；品牌词继续并既有页。
 
 2026-10-26 ITEM2已发布 https://rentaldealradar.com/guides/cheapest-one-way-car-rental/；下一条ITEM3 car rental without credit card，2026-10-27 09:00，先核同意图旧页不重复建；ITEM4其后；未扩词未补发。
+
+
+## 2026-11-02 最新七项缺口执行台账
+来源：research/benchmark-hertz-20261101.md 的七项缺口，不另换关键词方向。这里只计这七项交付物，不把历史品牌并页任务混进本轮剩余数。
+1. 优惠日期：已完成，hertz-coupon-code-booking-vs-pickup-deadline。
+2. 搜索摘要与正文核对：已在同一日期指南中完成，不重复新开页。
+3. 会员或职业资格的逐字段工作表：待执行。
+4. 优惠组合证据矩阵：英文稿、三图、CSV、42秒英文字幕视频和sitemap已准备；Cloudflare未登录，尚未发布，不出队。
+5. 车型与租期逐条筛选表：待执行。
+6. 同行程原始报价证据包：待执行。
+7. 预订确认、取车合同、最终账单对账模板：待执行。
+本轮尚未完成5条（含第4条待发布稿）；第4条真正发布成功后余4条。未宣称搜索量、库存、报价测试或全网独家比例。

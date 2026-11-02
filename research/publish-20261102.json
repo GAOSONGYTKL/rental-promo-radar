@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-02",
+  "sources": {
+    "pay": "https://www.hertz.com/us/en/deals-and-offers/us-offers/save-up-to-25-now",
+    "upgrade": "https://www.hertz.com/us/en/deals-and-offers/us-offers/enjoy-a-free-upgrade",
+    "day": "https://www.hertz.com/us/en/deals-and-offers/us-offers/get-1-free-rental-day",
+    "fields": "https://www.hertz.com/rentacar/reservation/gaq/templates/whenWhereHowExtrasPopup.jsp"
+  },
+  "original_analysis_words": 599,
+  "total_words": 955,
+  "method": "Original marked analysis words / answer and body words; editorial accounting, not a global exclusivity or plagiarism score",
+  "benchmark_pages": [
+    "https://couponfollow.com/site/hertz.com",
+    "https://www.cntraveler.com/story/hertz-promo-code",
+    "https://www.hertz.com/us/en/deals-and-offers"
+  ],
+  "gap": "Offer-specific combination evidence matrix; reviewed samples, not a whole-domain absence claim",
+  "booking_test": false,
+  "original_analysis_percent": 62.72,
+  "publication_status": "blocked: Cloudflare CLI unauthenticated and dashboard redirects to login",
+  "video": {
+    "duration_seconds": 42,
+    "decode_check": "passed",
+    "upload_status": "not uploaded",
+    "embedding": "prepared in article"
+  },
+  "verification": {
+    "build": "passed",
+    "canonical": "passed",
+    "sitemap_new_url": "passed",
+    "local_media_links": "passed",
+    "answer_first": "passed",
+    "tests": "3 passed; 2 completed assertions but errored during temporary-directory cleanup due to bulk-delete guard",
+    "browser_preview": "visible answer, matrix, three images, worksheet and video element checked at localhost"
+  }
+}
