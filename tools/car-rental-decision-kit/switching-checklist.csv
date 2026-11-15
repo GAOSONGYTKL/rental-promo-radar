@@ -1,0 +1,5 @@
+check,record,decision_supported,source_url
+Same rental,"Dates; pickup and return stations; vehicle class; mileage; selected extras",Whether the quotes cover the same service,https://rentaldealradar.com/guides/best-car-rental-deals/
+Exit cost,Applicable cancellation charge at the intended cancellation time,What to subtract from the apparent saving,https://rentaldealradar.com/guides/best-car-rental-deals/
+Replacement status,"Private reservation evidence; payment terms; cancellation terms",Whether the replacement is confirmed rather than merely quoted,https://rentaldealradar.com/guides/best-car-rental-deals/
+Temporary funding,New payments and holds before the old refund is available,Whether the switch can be funded while money is tied up,https://rentaldealradar.com/guides/best-car-rental-deals/
